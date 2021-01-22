@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Management</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="indexContainer" class="jumbotron">
+        <div id="indexHeading">
+            <h1 class="display-4">Course Management System</h1>
+            <div id="indexButtonContainer">
+                <div id="indexLoginButton">
+                    <form action="login/login.template.client.html">
+                        <button class="btn btn-primary btn-lg">Login</button>
+                    </form>
+                </div>
+                <div id="indexProfileButton">
+                    <form action="profile/profile.template.client.html">
+                        <button class="btn btn-primary btn-lg">Profile</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+            <div id="indexTableContainer">
+                <div id="tableHeader">
+                    <h1 >Course List</h1>
+                    <button class="btn btn-primary btn-lg">Add Class</button>
+                </div>
+                <div>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Owner</th>
+                            <th scope="col">Date Last Modified</th>
+                            <th scope="col">Time Last Modified</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row"><img class="icon" src="icons/presentation.png"></th>
+                            <td><a href="editor/editor.template.client.html">CS 5610</a></td>
+                            <td>Jose Annunziato</td>
+                            <td>2021-01-21</td>
+                            <td>08:54</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><img class="icon" src="icons/presentation.png"></th>
+                            <td><a href="editor/editor.template.client.html">CS 3700</a></td>
+                            <td>Alden Jackson</td>
+                            <td>2021-01-19</td>
+                            <td>12:42</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><img class="icon" src="icons/presentation.png"></th>
+                            <td><a href="editor/editor.template.client.html">CS 3200</a></td>
+                            <td>Jose Annunziato</td>
+                            <td>2021-01-21</td>
+                            <td>06:41</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+        </div>
+    </div>
+</body>
+</html>

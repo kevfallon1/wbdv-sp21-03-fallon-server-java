@@ -1,0 +1,40 @@
+body {
+  background-image: url("background.jpg");
+}
+
+#indexContainer {
+  margin-top: 5%;
+  margin-right: 5%;
+  margin-left: 5%
+}
+
+#indexButtonContainer {
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+#indexLoginButton {
+  margin-right: 1vw;
+}
+
+#indexTableContainer {
+  margin-top: 5vw;
+  border-style: solid;
+  border-width: .5vw;
+  padding: 2vw;
+}
+
+#tableHeader {
+  display:flex;
+  justify-content: space-between;
+}
+
+.icon {
+  max-width: 3vw;
+}
+
+#indexHeading {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Course Editor</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="editor.style.client.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+
+  <div id="editorContainer" class="">
+      <h1 class="display-4">Course Editor</h1>
+    <div id="editButtonsContainer">
+      <div id="editButtons">
+        <form action="../index.html">
+          <button class="btn btn-primary">Home</button>
+        </form>
+        <div>
+          <button class="btn btn-success">Save</button>
+        </div>
+        <div>
+          <button class="btn btn-primary">Add Widget</button>
+        </div>
+      </div>
+    </div>
+        <div id="moduleListContainer">
+
+          <!-- List group -->
+          <div class="list-group" id="myList" role="tablist">
+            <a class="list-group-item list-group-item-action active" data-toggle="list" href="#home" role="tab">Module 1: Stuff</a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#profile" role="tab">Module 2: Things</a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#messages" role="tab">Module 3: Stuff and things</a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#settings" role="tab">Module 4: The Universe</a>
+          </div>
+          <div id="addModuleButtonContainer">
+            <button class="btn btn-primary btn-block">Add New Module</button>
+            <button class="btn btn-danger btn-block">Delete Module</button>
+          </div>
+
+
+        </div>
+          <div id="courseEditModule">
+
+
+            <div style="margin-right: 0; margin-left: auto; margin-top: 2vw;">
+              <div id="topicList">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-dark">Topic 1</button>
+                  <button type="button" class="btn btn-dark">Topic 2</button>
+                  <button type="button" class="btn btn-dark">Topic 3</button>
+                  <button type="button" class="btn btn-dark">Topic 4</button>
+                  <button type="button" class="btn btn-dark">Topic 5</button>
+                  <button type="button" class="btn btn-dark">Topic 6</button>
+                </div>
+              </div>
+            </div>
+
+            <div id="widgetList">
+
+              <div class="jumbotron widget">
+
+                <div class="widgetHeader">
+                  <div>
+                    <h3>Heading Widget</h3>
+                  </div>
+
+                  <div class="widgetButtonContainer">
+                      <select class="form-control widgetTypeSelect">
+                        <option>Heading</option>
+                        <option>Body</option>
+                      </select>
+                      <button class="btn btn-primary widgetButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-square-fill" viewBox="0 0 16 16">
+                          <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 9h8a.5.5 0 0 0 .374-.832l-4-4.5a.5.5 0 0 0-.748 0l-4 4.5A.5.5 0 0 0 4 11z"/>
+                        </svg>
+                      </button>
+                      <button class="btn btn-primary widgetButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-square-fill" viewBox="0 0 16 16">
+                          <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 4a.5.5 0 0 0-.374.832l4 4.5a.5.5 0 0 0 .748 0l4-4.5A.5.5 0 0 0 12 6H4z"/>
+                        </svg>
+                      </button>
+
+                      <button class="btn btn-danger widgetButton">Delete widget</button>
+                  </div>
+                </div>
+                  <div>
+                  <input class="form-control" placeholder="Heading Text"/>
+                  </div>
+              </div>
+
+              <div class="jumbotron widget">
+
+                <div class="widgetHeader">
+                  <div>
+                    <h3>Body Widget</h3>
+                  </div>
+
+                  <div class="widgetButtonContainer">
+                    <select class="form-control widgetTypeSelect">
+                      <option>Body</option>
+                      <option>Heading</option>
+                    </select>
+                    <button class="btn btn-primary widgetButton">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-square-fill" viewBox="0 0 16 16">
+                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 9h8a.5.5 0 0 0 .374-.832l-4-4.5a.5.5 0 0 0-.748 0l-4 4.5A.5.5 0 0 0 4 11z"/>
+                      </svg>
+                    </button>
+                    <button class="btn btn-primary widgetButton">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-square-fill" viewBox="0 0 16 16">
+                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 4a.5.5 0 0 0-.374.832l4 4.5a.5.5 0 0 0 .748 0l4-4.5A.5.5 0 0 0 12 6H4z"/>
+                      </svg>
+                    </button>
+
+                    <button class="btn btn-danger widgetButton">Delete widget</button>
+                  </div>
+                </div>
+                <div>
+                  <textarea class="form-control" placeholder="Body Text"></textarea>
+                </div>
+              </div>
+
+
+
+            </div>
+
+
+          </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

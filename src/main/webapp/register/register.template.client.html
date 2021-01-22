@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="register.style.client.css">
+  <link rel="stylesheet" href="../style.css">
+
+</head>
+<body>
+  <div id="container" class="jumbotron">
+    <div>
+      <form action="../index.html">
+        <button class="btn btn-danger btn-sm">Cancel</button>
+      </form>
+    </div>
+
+    <h1 class="display-3">Create an account</h1>
+    <form>
+      <div>
+        <label for="username">Username</label>
+        <input id="username" class="form-control" placeholder="Enter username" required/>
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input id="password" class="form-control" placeholder="Enter password" required/>
+      </div>
+      <div>
+        <label for="verifyPassword">Verify Password</label>
+        <input id="verifyPassword" class="form-control" placeholder="Verify password" required/>
+      </div>
+      <div>
+        <button type="submit" id="signupButton" class="btn btn-primary btn-lg btn-block">Sign up</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

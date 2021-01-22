@@ -1,0 +1,74 @@
+
+
+#editorContainer {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background-color: gray;
+  border-radius: 3vw;
+  padding: 2vw;
+  margin-top: 5vw;
+  margin-right: 5vw;
+  margin-left: 5vw;
+}
+
+#moduleListContainer {
+  background-color: black;
+  height:100%;
+  padding: 1.5vw;
+  border-radius: 2vw;
+}
+
+#courseEditModule {
+  display: flex;
+  flex-direction: column;
+}
+
+#addModuleButtonContainer {
+  margin-top: 1vw;
+}
+
+#editButtonsContainer {
+  display:flex;
+  justify-content: flex-end;
+}
+
+#editButtons {
+  display: flex;
+  flex-direction: row;
+
+}
+
+#widgetList {
+  padding: 2vw;
+}
+
+.widgetHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.widgetButton {
+  margin-bottom: 1vw;
+  margin-left: .25vw;
+  margin-right: .25vw;
+}
+
+.widgetTypeSelect {
+  width: 10vw;
+  margin-right: .25vw;
+  marin-left: .5vw
+}
+
+.widgetButtonContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn-group {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+
+
