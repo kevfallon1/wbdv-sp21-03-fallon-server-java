@@ -1,26 +1,37 @@
-
-
 #editorContainer {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  background-color: gray;
+
+  background-color: white;
   border-radius: 3vw;
-  padding: 2vw;
+
   margin-top: 5vw;
-  margin-right: 5vw;
-  margin-left: 5vw;
+  margin-right: auto;
+  margin-left: auto;
+  overflow:hidden;
+
+
+}
+
+#contentContainer {
+  padding: 3vw;
+}
+
+#editorHeader {
+  background-color: dimgray;
+  color: white;
+  padding: 2vw;
+
+  margin-left: 0;
+  margin-right: 0;
 }
 
 #moduleListContainer {
   background-color: black;
   height:100%;
-  padding: 1.5vw;
+  padding: 3vw;
   border-radius: 2vw;
 }
 
 #courseEditModule {
-  display: flex;
-  flex-direction: column;
 }
 
 #addModuleButtonContainer {
@@ -28,14 +39,14 @@
 }
 
 #editButtonsContainer {
-  display:flex;
-  justify-content: flex-end;
+  #display:flex;
+  #justify-content: flex-end;
 }
 
 #editButtons {
   display: flex;
   flex-direction: row;
-
+  align-content: flex-end;
 }
 
 #widgetList {
@@ -48,12 +59,11 @@
   justify-content: space-between;
 }
 
-.widgetButton {
-  margin-bottom: 1vw;
-  margin-left: .25vw;
-  margin-right: .25vw;
+.widget {
+  padding: 2vw;
+  margin: 2vw;
+  background-color: dimgray;
 }
-
 .widgetTypeSelect {
   width: 10vw;
   margin-right: .25vw;
