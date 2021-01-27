@@ -9,9 +9,8 @@ body {
 }
 
 #indexButtonContainer {
-  display: flex;
-  justify-content: flex-start;
-
+  margin-right: 0;
+  margin-left: auto;
 }
 
 #indexLoginButton {
@@ -35,6 +34,4 @@ body {
 }
 
 #indexHeading {
-  display: flex;
-  justify-content: space-between;
 }
