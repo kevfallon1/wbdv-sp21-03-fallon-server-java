@@ -9,8 +9,9 @@ body {
 }
 
 #indexButtonContainer {
-  margin-right: 0;
-  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+
 }
 
 #indexLoginButton {
