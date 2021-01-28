@@ -10,25 +10,152 @@
 
 }
 
+h1 {
+  color: black;
+  font-weight: 600;
+  font-size: 3rem;
+  opacity: 0.8;
+}
+
+h2, p {
+  color: black;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.myButton {
+  box-shadow:inset 0px -3px 7px 0px #a18cd1;
+  background:linear-gradient(to bottom, #a18cd1 0%, #fbc2eb 100%);
+  border-radius:1rem;
+
+  display:inline-block;
+  cursor:pointer;
+  color: black;
+  font-family:Arial;
+  font-size:15px;
+  padding:9px 23px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px;
+}
+.myButton:hover {
+  background:linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
+main {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background-image: linear-gradient(to right top, #a18cd1 0%, #fbc2eb 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fancyButton {
+  background-image: linear-gradient(to right top, #a18cd1 0%, #fbc2eb 100%);
+  flex: 1;
+  border-style: solid;
+  border-color: black;
+}
+
+.fancyNavbar {
+  background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+
+.editorContainer {
+  background: white;
+  width: 75%;
+  height: 60%;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  z-index: 2;
+
+}
+
+.moduleListContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+
+
+  background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  padding: 1vw;
+}
+
+.link {
+  display: flex;
+  margin: 2rem 0rem;
+  padding: 1rem 5rem;
+  align-items: center;
+}
+
+.addModuleButtonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.widget {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 1rem;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  justify-content: space-between;
+}
+
+.widget * {
+  margin-bottom: .7rem;
+}
+
+.topics {
+  margin-right: 2vw;
+}
+
 #contentContainer {
   padding: 3vw;
 }
 
 #editorHeader {
-  background-color: dimgray;
-  color: white;
+  color: black;
   padding: 2vw;
 
   margin-left: 0;
   margin-right: 0;
 }
 
-#moduleListContainer {
-  background-color: black;
-  height:100%;
-  padding: 3vw;
-  border-radius: 2vw;
-}
+
 
 #courseEditModule {
 }
@@ -53,23 +180,27 @@
 }
 
 .widgetHeader {
+  padding-left: 2vw;
+  padding-right: 2vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.widget {
-  padding: 2vw;
-  margin: 2vw;
-  background-color: dimgray;
-}
+
 .widgetTypeSelect {
   width: 10vw;
   margin-right: .25vw;
-  marin-left: .5vw
+  marin-left: .5vw;
+  background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+  );
 }
 
 .widgetButtonContainer {
+
   display: flex;
   flex-direction: row;
 }
