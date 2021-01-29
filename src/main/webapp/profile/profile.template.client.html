@@ -8,48 +8,50 @@
   <link rel="stylesheet" href="../style.css">
 </head>
   <body>
-    <div id="container" class="jumbotron">
-      <div>
-        <form action="../index.html">
-          <button class="btn btn-primary btn-sm">Home</button>
-        </form>
-      </div>
+    <main>
+      <div class="indexContainer container">
+        <div>
+          <form action="../index.html">
+            <button class="btn btn-primary btn-sm">Home</button>
+          </form>
+        </div>
 
-      <h1 class="display-3">Profile</h1>
-      <form>
-        <div>
-          <label for="username">Username</label>
-          <input id="username" class="form-control" placeholder="RandomUsername" readonly/>
-        </div>
-        <div>
-          <label for="email">Email</label>
-          <input id="email" class="form-control" placeholder="email@email.com" />
-        </div>
-        <div>
-          <label for="phoneNumber">Phone number</label>
-          <input id="phoneNumber" class="form-control" placeholder="XXX-XXX-XXXX" />
-        </div>
-        <div>
-          <label for="role">Role</label>
-          <select id="role" class="form-control">
-            <option>Student</option>
-            <option>Faculty</option>
-            <option>Admin</option>
-          </select>
-        </div>
-        <div>
-          <label for="dob">Date of birth</label>
-          <input id="dob" type="date" class="form-control">
-        </div>
-        <div id="buttonContainer">
-          <button onclick="alert('Profile updated successfully')" id="updateButton" class="btn btn-success btn-lg btn-block">Update profile</button>
-        </div>
-      </form>
-      <div>
-        <form action="../index.html">
-          <button id="logoutButton" class="btn btn-danger btn-lg btn-block">Log out</button>
+        <h1 class="display-3">Profile</h1>
+        <form>
+          <div class="row inputField">
+            <label class="col-sm-2"for="username">Username</label>
+            <input id="username" class="form-control col-sm-10" placeholder="RandomUsername" readonly/>
+          </div>
+          <div class="row inputField">
+            <label class="col-sm-2"for="email">Email</label>
+            <input id="email" class="form-control col-sm-10" placeholder="email@email.com" />
+          </div>
+          <div class="row inputField">
+            <label class="col-sm-2"for="phoneNumber">Phone number</label>
+            <input id="phoneNumber" class="form-control col-sm-10" placeholder="XXX-XXX-XXXX" />
+          </div>
+          <div class="row inputField">
+            <label class="col-sm-2"for="role">Role</label>
+            <select id="role" class="form-control col-sm-10">
+              <option>Student</option>
+              <option>Faculty</option>
+              <option>Admin</option>
+            </select>
+          </div>
+          <div class="row inputField">
+            <label class="col-sm-2"for="dob">Date of birth</label>
+            <input id="dob" type="date" class="form-control col-sm-10">
+          </div>
+          <div id="buttonContainer">
+            <button onclick="alert('Profile updated successfully')" id="updateButton" class="btn btn-success btn-lg btn-block">Update profile</button>
+          </div>
         </form>
+        <div>
+          <form action="../index.html">
+            <button id="logoutButton" class="btn btn-danger btn-lg btn-block">Log out</button>
+          </form>
+        </div>
       </div>
-    </div>
+    </main>
 </body>
 </html>
