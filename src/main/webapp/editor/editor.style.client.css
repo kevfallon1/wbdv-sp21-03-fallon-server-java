@@ -1,14 +1,4 @@
-#editorContainer {
 
-  background-color: white;
-  border-radius: 3vw;
-
-  margin-top: 5vw;
-  margin-right: auto;
-  margin-left: auto;
-  overflow:hidden;
-
-}
 
 h1 {
   color: black;
@@ -75,6 +65,9 @@ main {
 
 .editorContainer {
   background: white;
+
+  width: 90%;
+  max-width: 1120px;
   margin-left: 5vw;
   margin-right: 5vw;
   background: linear-gradient(
