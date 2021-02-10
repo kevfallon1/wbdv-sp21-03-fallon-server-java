@@ -26,10 +26,6 @@ function UserServiceClient() {
     })
   }
 
-  function findUserById() {
-
-  }
-
   function updateUser(userId, user) {
     return fetch(`${this.url}/${userId}`, {
       method: 'PUT',
