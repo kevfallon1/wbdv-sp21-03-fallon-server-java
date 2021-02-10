@@ -29,7 +29,7 @@ function renderUsers(users) {
     $tableBody.prepend(`
       <tr>
               <td>${user.username}</td>
-              <td></td>
+              <td>${user.password}</td>
               <td>${user.first}</td>
               <td>${user.last}</td>
               <td>${user.role}</td>
@@ -94,7 +94,7 @@ function selectUser(event) {
 }
 
 
-function main() {
+function init() {
   $tableBody = $('.wbdv-tbody');
   $usernameFld = $('#username-fld');
   $passwordFld = $('#password-fld');
@@ -136,4 +136,4 @@ function main() {
 
 }
 
-jQuery(main);
+jQuery(init);
