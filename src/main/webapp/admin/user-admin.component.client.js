@@ -29,7 +29,7 @@ function renderUsers(users) {
     $tableBody.prepend(`
       <tr>
               <td>${user.username}</td>
-              <td>${user.password}</td>
+              <td></td>
               <td>${user.first}</td>
               <td>${user.last}</td>
               <td>${user.role}</td>
